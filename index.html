@@ -1,0 +1,50 @@
+<!--PROYECTO DE CHALLENGE PARA ORACLE ONE G9 2025, DE ALURA CREADO RESULETO POR RAÚL TRUEBA-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video de fondo local</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Video local como fondo -->
+  <div class="video-container">
+    <video autoplay muted loop playsinline>
+      <source src="assets/d5.mp4" type="video/mp4">
+      Tu navegador no soporta el elemento de video.
+    </video>
+    <div id="video_pattern"></div>
+  </div>
+
+  <!-- Contenido sobre el video -->
+  <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">Amigo Secreto</h1>
+            <img src="assets/amigo-secreto.png" alt="Imagen representativa de amigo secreto">
+        </header>
+        
+        <section class="input-section">
+            <h2 class="section-title">Digita el nombre de tus amigos</h2>
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Escribe un nombre">
+                <button class="button-add" onclick="agregarAmigo()">Añadir</button>
+            </div>
+           
+            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    <img src="assets/play_circle_outline.png" alt="Ícono para sortear">
+                    Sortear amigo
+                </button>
+            </div>
+            <br><h3 class="deep">By Raúl Trueba ONE G9-2025</h3>
+        </section>
+    </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
